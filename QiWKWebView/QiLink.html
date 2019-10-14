@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>QiWKWebView</title>
+<style type="text/css">
+h1 {font-size: 300%}
+h2 {font-size: 200%}
+p {font-size: 300%}
+a {font-size: 300%}
+input {font-size: 200%}
+</style>
+</head>
+<body>
+
+<a href="javascript:"  onClick="window.open('https://www.so.com',' ')">window 打开so.com</a>
+<br>
+<a href="https://www.so.com" rel="external nofollow" target="_blank">blank 打开so.com</a>
+<br>
+<a href="http://www.so.com" rel="external nofollow" target="_self">self so.com</a>
+<br>
+<a href="https://www.so.com" rel="external nofollow" target="_parent">parent so.com</a>
+<br>
+<a href="https://www.so.com" rel="external nofollow" target="_top">top so.com</a>
+
+<br>
+<a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!" target="_top">发送邮件</a>
+<br>
+给<a href="sms:10086,10010?body=消息内容">10086,10010</a>发信息
+<br>
+给<a href="tel:10086">10086</a>打电话 
+
+<p>未添加链接的虚拟号码 12345678910 </p>
+
+<p>
+
+
+
+<script>
+function alertFunction(){
+	alert("你好，我是一个警告框！");
+}
+
+function confirmFunction(){
+	window.confirm("confim 弹框");
+}
+
+function promptFunction(){
+	window.prompt("prompt 弹框");
+}
+
+//自定义弹框
+function Toast(msg,duration){
+    duration=isNaN(duration)?3000:duration;
+    var m = document.createElement('div');
+    m.innerHTML = msg;
+    m.style.cssText="width: 60%;min-width: 150px;opacity: 0.7;height: 200px;color: rgb(255, 255, 255);line-height: 100px;text-align: center;border-radius: 5px;position: fixed;top: 40%;left: 20%;z-index: 999999;background: rgb(0, 0, 0);font-size:48px;";
+    document.body.appendChild(m);
+    setTimeout(function() {
+        var d = 0.5;
+        m.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';
+        m.style.opacity = '0';
+        setTimeout(function() { document.body.removeChild(m) }, d * 1000);
+    }, duration);
+}
+
+</script>
+</head>
+<body>
+
+<input type="button" onclick="alertFunction()" value="显示alert弹框" />
+<br>
+<input type="button" onclick="confirmFunction()" value="显示confirm弹框" />
+<br>
+<input type="button" onclick="promptFunction()" value="显示prompt弹框" />
+<br>
+<input type="button" onclick="Toast('Toast弹框',2000)" value="显示Toast弹框" />
+
+
+<p>
+<b>注意:</b> 单词之间的空格使用 %20 代替，以确保浏览器可以正常显示文本。
+</p>
+
+<script>
+window.open("https://www.so.com");
+<a href="javascript:"  onClick="window.open('//www.so.com',' ')">这是网站</a>
+</script>
+
+</body>
+</html>
