@@ -32,7 +32,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"首页";
     [self setupUI];
 }
 
@@ -41,6 +40,8 @@
 
 - (void)setupUI {
     
+    self.navigationController.navigationBar.translucent = YES;
+    self.title = @"WKWebView基本使用";
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"WKBack" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemClicked:)];
     self.navigationItem.leftBarButtonItem = backItem;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"更多" style:UIBarButtonItemStylePlain target:self action:@selector(moreItemClicked:)];
@@ -72,6 +73,8 @@
     
     if ([_webView canGoBack]) {
         [_webView goBack];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5C8224236FCB4000ABA8BF /* QiCustomWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5C8223236FCB4000ABA8BF /* QiCustomWKWebViewController.m */; };
+		EE5C8227236FCB7D00ABA8BF /* QiCustomSchemeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5C8226236FCB7D00ABA8BF /* QiCustomSchemeHandler.m */; };
+		EE5C822C236FCBD000ABA8BF /* QiCustomResource.html in Resources */ = {isa = PBXBuildFile; fileRef = EE5C822B236FCBD000ABA8BF /* QiCustomResource.html */; };
+		EE5C8232237030A200ABA8BF /* QiWKScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5C8231237030A200ABA8BF /* QiWKScriptViewController.m */; };
+		EE5D5BFF237132AE00B8E95D /* QiContentRule.html in Resources */ = {isa = PBXBuildFile; fileRef = EE5D5BFE237132AE00B8E95D /* QiContentRule.html */; };
 		EEB8BBC7234C455000C9DF71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB8BBC6234C455000C9DF71 /* AppDelegate.m */; };
 		EEB8BBCA234C455000C9DF71 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB8BBC9234C455000C9DF71 /* SceneDelegate.m */; };
 		EEB8BBCD234C455000C9DF71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB8BBCC234C455000C9DF71 /* ViewController.m */; };
@@ -20,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE5C8222236FCB4000ABA8BF /* QiCustomWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCustomWKWebViewController.h; sourceTree = "<group>"; };
+		EE5C8223236FCB4000ABA8BF /* QiCustomWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCustomWKWebViewController.m; sourceTree = "<group>"; };
+		EE5C8225236FCB7D00ABA8BF /* QiCustomSchemeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCustomSchemeHandler.h; sourceTree = "<group>"; };
+		EE5C8226236FCB7D00ABA8BF /* QiCustomSchemeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCustomSchemeHandler.m; sourceTree = "<group>"; };
+		EE5C822B236FCBD000ABA8BF /* QiCustomResource.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QiCustomResource.html; sourceTree = "<group>"; };
+		EE5C8230237030A200ABA8BF /* QiWKScriptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiWKScriptViewController.h; sourceTree = "<group>"; };
+		EE5C8231237030A200ABA8BF /* QiWKScriptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiWKScriptViewController.m; sourceTree = "<group>"; };
+		EE5D5BFE237132AE00B8E95D /* QiContentRule.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QiContentRule.html; sourceTree = "<group>"; };
 		EEB8BBC2234C455000C9DF71 /* QiWKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiWKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB8BBC5234C455000C9DF71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEB8BBC6234C455000C9DF71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +63,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE5C8221236FCB3200ABA8BF /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D5BFE237132AE00B8E95D /* QiContentRule.html */,
+				EE5C822B236FCBD000ABA8BF /* QiCustomResource.html */,
+				EE5C8222236FCB4000ABA8BF /* QiCustomWKWebViewController.h */,
+				EE5C8223236FCB4000ABA8BF /* QiCustomWKWebViewController.m */,
+				EE5C8225236FCB7D00ABA8BF /* QiCustomSchemeHandler.h */,
+				EE5C8226236FCB7D00ABA8BF /* QiCustomSchemeHandler.m */,
+				EE5C8230237030A200ABA8BF /* QiWKScriptViewController.h */,
+				EE5C8231237030A200ABA8BF /* QiWKScriptViewController.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		EE5C822D236FCBE000ABA8BF /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8BBE4234DBEAD00C9DF71 /* QiLink.html */,
+				EEB8BBDE234C45A800C9DF71 /* QiWKWebViewController.h */,
+				EEB8BBDF234C45A800C9DF71 /* QiWKWebViewController.m */,
+				EEB8BBE1234C930900C9DF71 /* QiWKDetailViewController.h */,
+				EEB8BBE2234C930900C9DF71 /* QiWKDetailViewController.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
 		EEB8BBB9234C455000C9DF71 = {
 			isa = PBXGroup;
 			children = (
@@ -69,17 +109,14 @@
 		EEB8BBC4234C455000C9DF71 /* QiWKWebView */ = {
 			isa = PBXGroup;
 			children = (
-				EEB8BBE4234DBEAD00C9DF71 /* QiLink.html */,
+				EE5C8221236FCB3200ABA8BF /* Custom */,
+				EE5C822D236FCBE000ABA8BF /* Basic */,
 				EEB8BBC5234C455000C9DF71 /* AppDelegate.h */,
 				EEB8BBC6234C455000C9DF71 /* AppDelegate.m */,
 				EEB8BBC8234C455000C9DF71 /* SceneDelegate.h */,
 				EEB8BBC9234C455000C9DF71 /* SceneDelegate.m */,
 				EEB8BBCB234C455000C9DF71 /* ViewController.h */,
 				EEB8BBCC234C455000C9DF71 /* ViewController.m */,
-				EEB8BBDE234C45A800C9DF71 /* QiWKWebViewController.h */,
-				EEB8BBDF234C45A800C9DF71 /* QiWKWebViewController.m */,
-				EEB8BBE1234C930900C9DF71 /* QiWKDetailViewController.h */,
-				EEB8BBE2234C930900C9DF71 /* QiWKDetailViewController.m */,
 				EEB8BBCE234C455000C9DF71 /* Main.storyboard */,
 				EEB8BBD1234C455400C9DF71 /* Assets.xcassets */,
 				EEB8BBD3234C455400C9DF71 /* LaunchScreen.storyboard */,
@@ -147,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB8BBD5234C455400C9DF71 /* LaunchScreen.storyboard in Resources */,
+				EE5C822C236FCBD000ABA8BF /* QiCustomResource.html in Resources */,
 				EEB8BBD2234C455400C9DF71 /* Assets.xcassets in Resources */,
 				EEB8BBE5234DBEAE00C9DF71 /* QiLink.html in Resources */,
+				EE5D5BFF237132AE00B8E95D /* QiContentRule.html in Resources */,
 				EEB8BBD0234C455000C9DF71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,8 +201,11 @@
 			files = (
 				EEB8BBE0234C45A800C9DF71 /* QiWKWebViewController.m in Sources */,
 				EEB8BBE3234C930900C9DF71 /* QiWKDetailViewController.m in Sources */,
+				EE5C8227236FCB7D00ABA8BF /* QiCustomSchemeHandler.m in Sources */,
+				EE5C8232237030A200ABA8BF /* QiWKScriptViewController.m in Sources */,
 				EEB8BBCD234C455000C9DF71 /* ViewController.m in Sources */,
 				EEB8BBC7234C455000C9DF71 /* AppDelegate.m in Sources */,
+				EE5C8224236FCB4000ABA8BF /* QiCustomWKWebViewController.m in Sources */,
 				EEB8BBD8234C455400C9DF71 /* main.m in Sources */,
 				EEB8BBCA234C455000C9DF71 /* SceneDelegate.m in Sources */,
 			);

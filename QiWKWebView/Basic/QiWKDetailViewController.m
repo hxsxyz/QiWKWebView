@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"详情";
+    self.title = @"WKWebView常见问题";
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"WKBack" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemClicked:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     

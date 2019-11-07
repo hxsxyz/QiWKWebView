@@ -1,18 +1,20 @@
 #import "SceneDelegate.h"
-#import "QiWKWebViewController.h"
+#import "ViewController.h"
 
 @implementation SceneDelegate
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     
-    UIWindowScene *windowScene = [[UIWindowScene alloc] initWithSession:session connectionOptions:connectionOptions];
-    self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-    self.window.frame = windowScene.coordinateSpace.bounds;
-    QiWKWebViewController *wkWebVC = [QiWKWebViewController new];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:wkWebVC];
-    self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
+    if (@available(iOS 13.0, *)) {
+        UIWindowScene *windowScene = [[UIWindowScene alloc] initWithSession:session connectionOptions:connectionOptions];
+        self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+        self.window.frame = windowScene.coordinateSpace.bounds;
+        ViewController *vc = [ViewController new];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }
 }
 
 @end
